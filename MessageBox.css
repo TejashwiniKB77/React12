@@ -1,0 +1,33 @@
+.message-box {
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin: 20px auto;
+  animation: pop 0.3s ease;
+}
+
+.success {
+  background: #4CAF50;
+}
+
+.error {
+  background: #E53935;
+}
+
+.message-box button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
